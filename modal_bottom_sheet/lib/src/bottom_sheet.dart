@@ -414,7 +414,7 @@ class ModalBottomSheetState extends State<ModalBottomSheet>
     return StatusBarGestureDetector(
       child: child,
       onTap: (context) {
-        if (!_scrollController.hasClient) return;
+        if (!_scrollController.hasClients) return;
         _scrollController.animateTo(
           0.0,
           duration: const Duration(milliseconds: 1000),
